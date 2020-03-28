@@ -148,16 +148,21 @@ small{
 
 button{
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1.1rem;
   background: $gradient-primary;
   color: #F0F0F0;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: $border-radius;
   border: none;
   box-shadow: $shadow;
   cursor: pointer;
+
+  @include mobile{
+    font-size: .9rem;
+    padding: 1rem;
+  }
 }
 
 button, input[type=number]{
