@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple password generator made for #7Days7Websites">
+  <meta name="keywords" content="password, generator, password generator, #7Days7Websites, the noah">
+  <meta name="author" content="The Noah">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Password Generator</title>
+</head>
+<body>
+  <noscript>Please enable JavaScript for this application to work.</noscript>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <h3 onclick="copy(this)">password</h3>
+    <small onclick="copy(this)">Copy to Clipboard</small>
+    <form>
+      <div>
+        <label style="display:block" id="characterAmountLabel" for="characterAmountRange">Length</label><br/>
+        <input id="characterAmountRange" type="range" min="1" max="64" value="8">
+        <div></div>
+      </div>
+      <div>
+        <app-switch id="includeUppercase" checked>Uppercase</app-switch>
+      </div>
+      <div>
+        <app-switch id="includeNumbers" checked>Numbers</app-switch>
+      </div>
+      <div>
+        <app-switch id="includeSymbols">Symbols</app-switch>
+      </div>
+      <button type="submit">Generate Password</button>
+    </form>
+  </div>
+  <span style="flex:1"></span>
+  <footer>
+    <a href="https://github.com/The-Noah/password-generator" target="_blank">GitHub</a> •
+    Copyright &copy; 2020 The Noah
+  </footer>
+  <span style="position:fixed;left:5px;bottom:2px;cursor:pointer;font-size:.9rem" onclick="toggleTheme()">&#9728;</span>
+</body>
+</html>
