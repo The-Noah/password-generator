@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm .gitignore
 mkdir -p build
 npm install node-sass uglify-js
 ./node_modules/node-sass/bin/node-sass --output-style=compressed style.scss > build/style.css
