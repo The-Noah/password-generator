@@ -1,6 +1,6 @@
 # password-generator
 
-![Build and Deploy](https://github.com/The-Noah/password-generator/workflows/Build%20and%20Deploy/badge.svg)
+[![Build and Deploy](https://github.com/The-Noah/password-generator/workflows/Build%20and%20Deploy/badge.svg)](https://the-noah.github.io/password-generator/)
 
 First [#7Days7Websites](https://7days7websites.glitch.me/) project.
 
