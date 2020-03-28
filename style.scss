@@ -52,8 +52,11 @@ body{
 
 footer{
   padding: .3em 0;
-  color: #777;
   font-size: .8rem;
+
+  &, *{
+    color: #777;
+  }
 }
 
 form{
@@ -159,6 +162,14 @@ button{
 
 button, input[type=number]{
   outline: none;
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 app-switch{
